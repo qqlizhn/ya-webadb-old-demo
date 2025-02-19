@@ -12,5 +12,9 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "cSpell.words": ["fluentui", "griffel", "logcat", "scrcpy", "tcpip"]
+    "cSpell.words": ["fluentui", "griffel", "logcat", "scrcpy", "tcpip"],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
+    },
 }

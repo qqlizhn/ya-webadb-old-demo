@@ -11,7 +11,8 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
     enabled: process.env.ANALYZE === "true",
 });
 
-const basePath = process.env.BASE_PATH ?? "";
+// const basePath = process.env.BASE_PATH ?? "";
+const basePath = process.env.BASE_PATH ?? "/myadb";
 
 const withPwa = require("@yume-chan/next-pwa")({
     dest: "public",
@@ -25,7 +26,7 @@ function pipe(value, ...callbacks) {
 }
 
 module.exports = pipe(
-    /** @type {import('next').NextConfig} */ ({
+    /** @type {import('next').NextConfig} */({
         basePath,
         pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
         reactStrictMode: false,
